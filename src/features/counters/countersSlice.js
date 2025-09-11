@@ -3,15 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = [
   {
     id: 1,
-    count: 1,
+    value: 1,
   },
   {
     id: 2,
-    count: 0,
+    value: 0,
   },
 ];
 
-const coutersSlice = createSlice({
+const countersSlice = createSlice({
   name: "counters",
   initialState,
   reducers: {
@@ -30,5 +30,5 @@ const coutersSlice = createSlice({
   },
 });
 
-export default coutersSlice.reducer;
-export const { increment, decrement, reset } = coutersSlice.actions;
+export default countersSlice.reducer;
+export const { increment, decrement, reset } = countersSlice.actions;
