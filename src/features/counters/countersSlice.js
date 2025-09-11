@@ -31,3 +31,4 @@ const coutersSlice = createSlice({
 });
 
 export default coutersSlice.reducer;
+export const { increment, decrement, reset } = coutersSlice.actions;
